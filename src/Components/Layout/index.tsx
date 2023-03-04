@@ -14,8 +14,7 @@ const FirstContainer = styled.div`
 width: 50%;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
+
 `
 
 const SecondContainer = styled.div`
@@ -23,7 +22,7 @@ width: 50%;
 height: 720px;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: end;
 `
 
 
