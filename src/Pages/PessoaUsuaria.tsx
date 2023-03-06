@@ -1,19 +1,30 @@
-import { PageContainer, FirstContainer, Title, Subtitle, SecondContainer, ImgPage }  from "./styled";
-import ImgPessoaUsuaria from "./../assets/images/ImgPessoaUsuaria.png"
+import {
+  PageContainer,
+  FirstContainer,
+  Title,
+  Subtitle,
+  SecondContainer,
+  ImgPage,
+} from "./styled";
+import ImgPessoaUsuaria from "./../assets/images/ImgPessoaUsuaria.png";
 
-interface PessoaUsuariaContent{}
+interface PessoaUsuariaContent {}
 
 const PessoaUsuaria: React.FC<PessoaUsuariaContent> = () => {
-    return(
-        <PageContainer>
-        <FirstContainer>
+  return (
+    <PageContainer>
+      <FirstContainer>
         <Title>Pessoa Usuária</Title>
-        <Subtitle>A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora.</Subtitle>
-        </FirstContainer>
-        <SecondContainer>
+        <Subtitle>
+          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
+          por profissionais de qualidade e que atendam às suas necessidades de
+          forma segura e acolhedora.
+        </Subtitle>
+      </FirstContainer>
+      <SecondContainer>
         <ImgPage src={ImgPessoaUsuaria}></ImgPage>
-        </SecondContainer>
-        </PageContainer>
-    )
-}
+      </SecondContainer>
+    </PageContainer>
+  );
+};
 export default PessoaUsuaria;

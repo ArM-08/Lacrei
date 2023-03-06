@@ -1,22 +1,18 @@
-import './reset.css'
-import Header from './Components/Header'
-import Home from './Pages/Home'
-import Footer from './Components/Footer'
-import PessoaUsuaria from './Pages/PessoaUsuaria'
-import Profissional from './Pages/Profissional'
+import "./reset.css";
+import Header from "./Components/Header";
+
+import Footer from "./Components/Footer";
+
+import MainRoute from "./Routes";
 
 function App() {
-
-
   return (
     <>
-   <Header />
-   <Home/>
-   <PessoaUsuaria/>
-   <Profissional/>
-    <Footer/>
-   </>
-  )
+      <Header />
+      <MainRoute />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

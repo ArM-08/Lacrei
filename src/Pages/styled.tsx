@@ -51,7 +51,11 @@ export const Buttons = styled.div`
 display: flex;
 gap: 60px;
 `
- export const Button = styled.button`
+ export const Button = styled.a`
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
 cursor: pointer;
 width: 192px;
 height: 48px;
