@@ -11,7 +11,6 @@ const FooterContainer = styled.footer`
   padding-top: 32px;
 `;
 
-
 const ButtonSocial = styled.img`
   width: 30px;
   height: 30px;
@@ -22,16 +21,16 @@ const Buttons = styled.div`
   margin: 24px 0 24px 0;
 `;
 const Front = styled.p`
-font-family: "Nunito", sans-serif;
-font-size: 12px;
-`
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+`;
 
 interface FooterContent {}
 
 const Footer: React.FC<FooterContent> = () => {
   return (
     <FooterContainer>
-      <Menu type="normal" selected={true} color="black"/>
+      <Menu type="normal" selected={true} color="black" />
       <Buttons>
         <ButtonSocial src={Face}></ButtonSocial>
         <ButtonSocial src={Insta}></ButtonSocial>

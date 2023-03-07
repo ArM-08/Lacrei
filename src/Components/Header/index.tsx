@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 import Menu from "../Menu";
 
@@ -10,10 +9,9 @@ const NavBar = styled.header`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  @media(max-width: 608px){
+  @media (max-width: 608px) {
     justify-content: center;
   }
-  
 `;
 
 const Logo = styled.a`
@@ -26,14 +24,13 @@ const Logo = styled.a`
   padding: 8px 64px;
 `;
 
-interface HeaderContent {
-}
+interface HeaderContent {}
 
 const Header: React.FC<HeaderContent> = () => {
   return (
     <NavBar>
       <Logo href="/">Lacrei</Logo>
-      <Menu type="bold" selected ={true} color="#018762"/>
+      <Menu type="bold" selected={true} color="#018762" />
     </NavBar>
   );
 };

@@ -12,14 +12,15 @@ interface ProfissionalContent {}
 
 const Profissional: React.FC<ProfissionalContent> = () => {
   useEffect(() => {
-    document.title = 'Profissional | Desafio Lacrei ';
+    document.title = "Profissional | Desafio Lacrei ";
   }, []);
   return (
     <PageContainer>
       <FirstContainer>
         <Title>Profissional</Title>
         <Subtitle border={true}>
-        Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se comprometam com o bem-estar da comunidade LGBTQIAPN+
+          Buscamos recrutar pessoas profissionais da saúde que entendam as
+          necessidades e se comprometam com o bem-estar da comunidade LGBTQIAPN+
         </Subtitle>
       </FirstContainer>
       <SecondContainer>

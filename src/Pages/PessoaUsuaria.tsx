@@ -13,7 +13,7 @@ interface PessoaUsuariaContent {}
 
 const PessoaUsuaria: React.FC<PessoaUsuariaContent> = () => {
   useEffect(() => {
-    document.title = 'Pessoa Usuaria | Desafio Lacrei ';
+    document.title = "Pessoa Usuaria | Desafio Lacrei ";
   }, []);
   return (
     <PageContainer>

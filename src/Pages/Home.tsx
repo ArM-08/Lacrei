@@ -15,7 +15,7 @@ interface HomePage {}
 
 const Home: React.FC<HomePage> = () => {
   useEffect(() => {
-    document.title = 'Home | Desafio Lacrei ';
+    document.title = "Home | Desafio Lacrei ";
   }, []);
   return (
     <PageContainer>
