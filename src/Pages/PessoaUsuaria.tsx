@@ -6,7 +6,7 @@ import {
   SecondContainer,
   ImgPage,
 } from "./styled";
-import ImgPessoaUsuaria from "./../assets/images/ImgPessoaUsuaria.png";
+import ImgPessoaUsuaria from "./../assets/images/imgPessoa.png";
 import { useEffect } from "react";
 
 interface PessoaUsuariaContent {}
