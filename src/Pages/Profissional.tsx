@@ -6,7 +6,7 @@ import {
   SecondContainer,
   ImgPage,
 } from "./styled";
-import ImgProfissional from "./../assets/images/imgProfissional.png";
+import ImgProfissional from "./../assets/images/imgProfi.png";
 import { useEffect } from "react";
 interface ProfissionalContent {}
 
