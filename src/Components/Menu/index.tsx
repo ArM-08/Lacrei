@@ -59,7 +59,7 @@ const Menu: React.FC<MenuContent> = (props) => {
 
   const items = [
     getItem(<StyledLink  type={props.type} selected={props.selected} color={props.color} active={path === '/'} to="/" >Home</StyledLink>, 1),
-    getItem(<StyledLink type={props.type} selected={props.selected} color={props.color} active={path === '/pessoa-usuaria'} to="/pessoa-usuaria">Pessoa Usuaria</StyledLink>, 2),
+    getItem(<StyledLink type={props.type} selected={props.selected} color={props.color} active={path === '/pessoa-usuaria'} to="/pessoa-usuaria">Pessoa Usuária</StyledLink>, 2),
     getItem(<StyledLink type={props.type} selected={props.selected} color={props.color} active={path === '/profissional' } to="/profissional">Profissional</StyledLink>, 3),
   ];
 
