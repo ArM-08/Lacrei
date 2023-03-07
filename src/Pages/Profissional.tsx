@@ -6,7 +6,7 @@ import {
   SecondContainer,
   ImgPage,
 } from "./styled";
-import ImgPessoaUsuaria from "./../assets/images/ImgProfissional.png";
+import ImgProfissional from "./../assets/images/ImgProfissional.png";
 import { useEffect } from "react";
 interface ProfissionalContent {}
 
@@ -23,7 +23,7 @@ const Profissional: React.FC<ProfissionalContent> = () => {
         </Subtitle>
       </FirstContainer>
       <SecondContainer>
-        <ImgPage src={ImgPessoaUsuaria}></ImgPage>
+        <ImgPage src={ImgProfissional}></ImgPage>
       </SecondContainer>
     </PageContainer>
   );
