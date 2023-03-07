@@ -7,10 +7,14 @@ import {
   ImgPage,
 } from "./styled";
 import ImgPessoaUsuaria from "./../assets/images/ImgPessoaUsuaria.png";
+import { useEffect } from "react";
 
 interface PessoaUsuariaContent {}
 
 const PessoaUsuaria: React.FC<PessoaUsuariaContent> = () => {
+  useEffect(() => {
+    document.title = 'Pessoa Usuaria | Desafio Lacrei ';
+  }, []);
   return (
     <PageContainer>
       <FirstContainer>

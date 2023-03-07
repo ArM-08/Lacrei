@@ -7,17 +7,19 @@ import {
   ImgPage,
 } from "./styled";
 import ImgPessoaUsuaria from "./../assets/images/ImgProfissional.png";
+import { useEffect } from "react";
 interface ProfissionalContent {}
 
 const Profissional: React.FC<ProfissionalContent> = () => {
+  useEffect(() => {
+    document.title = 'Profissional | Desafio Lacrei ';
+  }, []);
   return (
     <PageContainer>
       <FirstContainer>
         <Title>Profissional</Title>
         <Subtitle border={true}>
-          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
-          por profissionais de qualidade e que atendam às suas necessidades de
-          forma segura e acolhedora.
+        Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se comprometam com o bem-estar da comunidade LGBTQIAPN+
         </Subtitle>
       </FirstContainer>
       <SecondContainer>

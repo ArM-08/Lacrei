@@ -3,14 +3,17 @@ import styled from "styled-components";
 import Menu from "../Menu";
 
 const NavBar = styled.header`
-  width: 100vw;
-  height: 60px;
+  width: 100%;
+  min-height: 60px;
   background: #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 8px 64px;
+  @media(max-width: 608px){
+    justify-content: center;
+  }
+  
 `;
 
 const Logo = styled.a`
@@ -20,6 +23,7 @@ const Logo = styled.a`
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   text-decoration: none;
+  padding: 8px 64px;
 `;
 
 interface HeaderContent {
@@ -29,7 +33,7 @@ const Header: React.FC<HeaderContent> = () => {
   return (
     <NavBar>
       <Logo href="/">Lacrei</Logo>
-      <Menu/>
+      <Menu type="bold" selected ={true} color="#018762"/>
     </NavBar>
   );
 };

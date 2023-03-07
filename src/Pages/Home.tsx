@@ -9,10 +9,14 @@ import {
   ImgPage,
 } from "./styled";
 import ImgHome from "./../assets/images/ImgHome.png";
+import { useEffect } from "react";
 
 interface HomePage {}
 
 const Home: React.FC<HomePage> = () => {
+  useEffect(() => {
+    document.title = 'Home | Desafio Lacrei ';
+  }, []);
   return (
     <PageContainer>
       <FirstContainer>

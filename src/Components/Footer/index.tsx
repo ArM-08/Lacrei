@@ -21,18 +21,23 @@ const Buttons = styled.div`
   gap: 40px;
   margin: 24px 0 24px 0;
 `;
+const Front = styled.p`
+font-family: "Nunito", sans-serif;
+font-size: 12px;
+`
 
 interface FooterContent {}
 
 const Footer: React.FC<FooterContent> = () => {
   return (
     <FooterContainer>
-      <Menu/>
+      <Menu type="normal" selected={true} color="black"/>
       <Buttons>
         <ButtonSocial src={Face}></ButtonSocial>
         <ButtonSocial src={Insta}></ButtonSocial>
         <ButtonSocial src={Linkedin}></ButtonSocial>
       </Buttons>
+      <Front>Desafio Front-end Lacrei</Front>
     </FooterContainer>
   );
 };
