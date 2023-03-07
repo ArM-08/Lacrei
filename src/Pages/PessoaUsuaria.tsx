@@ -15,7 +15,7 @@ const PessoaUsuaria: React.FC<PessoaUsuariaContent> = () => {
     <PageContainer>
       <FirstContainer>
         <Title>Pessoa Usuária</Title>
-        <Subtitle>
+        <Subtitle border={true}>
           A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
           por profissionais de qualidade e que atendam às suas necessidades de
           forma segura e acolhedora.

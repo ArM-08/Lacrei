@@ -5,7 +5,7 @@ import Insta from "./../../assets/images/InstagramLogo.png";
 import Linkedin from "./../../assets/images/LinkedinLogo.png";
 
 const FooterContainer = styled.footer`
-  width: 90%;
+  width: 93%;
   border-top: 1px solid #b0e0d3;
   margin: 0 auto;
   padding-top: 32px;

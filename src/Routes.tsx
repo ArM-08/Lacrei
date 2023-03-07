@@ -12,7 +12,7 @@ const MainRoute: React.FC<RoutesContent>= () =>{
         <BrowserRouter>
         <Routes>
 <Route path="/" element={<Home/>}/>
-<Route path="/pessoausuaria" element={<PessoaUsuaria/>}/>
+<Route path="/pessoa-usuaria" element={<PessoaUsuaria/>}/>
 <Route path="/profissional" element={<Profissional/>}/>
         </Routes>
         </BrowserRouter>

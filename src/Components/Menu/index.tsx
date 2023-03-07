@@ -1,28 +1,31 @@
+
 import styled from "styled-components";
 
-const MenuItems = styled.div`
+
+const MenuItems = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  gap: 40px;
-  width: 327px;
-  height: 22.37px;
-  margin-right: 64px;
+  width: 320px;
 `;
-const Link = styled.a`
+
+interface Linkprops {
+  active: boolean
+}
+const Link = styled.a<Linkprops>`
   text-decoration: none;
-  color: black;
+  color: ${({ active }) => active ?  '#018762' : 'black'};
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
 `;
 
 const MenuItem = styled.li`
 list-style-type: none;
-  cursor: pointer;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+font-weight: bold;
   
 `;
 
@@ -30,24 +33,31 @@ list-style-type: none;
 interface MenuContent {
 }
 const Menu: React.FC<MenuContent> = () => {
+
   function getItem(label: JSX.Element, key: Number, ) {
     return {
       key: key.toString(),
       label,
     };
   }
+  const HomeActive = location.pathname === '/'
+  const PessoaActive = location.pathname === '/pessoa-usuaria'
+  const ProfissionalActive = location.pathname === '/profissional'
+
   const items = [
-    getItem(<Link href="/" >Home</Link>, 1),
-    getItem(<Link href="/pessoausuaria">Pessoa Usuaria</Link>, 2),
-    getItem(<Link href="/profissional">Profissional</Link>, 3),
+    getItem(<Link active={HomeActive} href="/" >Home</Link>, 1),
+    getItem(<Link active={PessoaActive} href="/pessoa-usuaria">Pessoa Usuaria</Link>, 2),
+    getItem(<Link active={ProfissionalActive} href="/profissional">Profissional</Link>, 3),
   ];
 
+  
   return (
     <MenuItems>
       {items.map((item) => (
         <MenuItem key={`menu-item-${item.key}`}>{item.label}</MenuItem>
       ))}
     </MenuItems>
+    
   );
 };
 export default Menu;

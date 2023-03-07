@@ -17,7 +17,7 @@ const Home: React.FC<HomePage> = () => {
     <PageContainer>
       <FirstContainer>
         <Title>Boas vindas a Lacrei Saúde</Title>
-        <Subtitle>
+        <Subtitle border={false}>
           Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
         </Subtitle>
         <Buttons>
