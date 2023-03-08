@@ -70,7 +70,7 @@ export const Subtitle = styled.p<subtitleProps>`
 export const Buttons = styled.div`
   display: flex;
   gap: 60px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     gap: 20px;
     flex-direction: column;
   }

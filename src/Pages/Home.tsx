@@ -25,7 +25,7 @@ const Home: React.FC<HomePage> = () => {
           Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
         </Subtitle>
         <Buttons>
-          <Button theme="#018762" color="#FFF" href="/pessoausuaria">
+          <Button theme="#018762" color="#FFF" href="/pessoa-usuaria">
             Pessoa Usuária
           </Button>
           <Button color="#018762" href="/profissional">
