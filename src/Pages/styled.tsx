@@ -20,6 +20,12 @@ export const FirstContainer = styled.div`
   justify-content: start;
   align-self: start;
   padding-top: 64px;
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  justify-content: center;
+
+  }
 `;
 
 export const SecondContainer = styled.div`
@@ -64,6 +70,10 @@ export const Subtitle = styled.p<subtitleProps>`
 export const Buttons = styled.div`
   display: flex;
   gap: 60px;
+  @media (max-width: 768px) {
+    gap: 20px;
+    flex-direction: column;
+  }
 `;
 export const Button = styled.a`
   text-decoration: none;
@@ -88,6 +98,7 @@ export const Button = styled.a`
   &:hover {
     opacity: 0.8;
   }
+ 
 `;
 
 export const ImgPage = styled.img`
