@@ -1,6 +1,9 @@
-<h1 align="center">Lacrei no Front-End</h1>
 
-<p align="center">Teste tecnico para vaga de voluntariado</p>
+<h1 align="center">Desafio Lacrei - Front end</h1>
+
+<p align="center">Teste técnico para vaga de voluntariado</p>
+<p  align="center">
+<img src="https://img.shields.io/badge/React-TypeScript-blue"/></p>
 <h4 align="center"> 
  ✅ Finalizado  
 </h4>
@@ -11,6 +14,7 @@
  • <a href="#tecnologias">Tecnologias</a>
  • <a href="#autor">Autor</a>
 </p>
+
 
 <h3 id="tarefas">Tarefas</h3>
 
@@ -24,6 +28,7 @@
 
 <h3 id="mockup"> Mockup </h3>
 
+![lacrei-mockup](https://user-images.githubusercontent.com/62227850/223621983-e17ac393-1341-4ff6-8c22-17435aad1234.jpg)
 
  <h3 id="tecnologias">Tecnologias utilizadas:</h3>
 
